@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desen Pixel Art cu Logare</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+</head>
+<body>
+    <div id="login-container" style="display: block;">
+        <h2>Logare</h2>
+        <input type="text" id="username" placeholder="Nume utilizator">
+        <input type="password" id="password" placeholder="Parolă">
+        <button onclick="login()">Logare / Înregistrare</button>
+    </div>
+    <div id="drawing-container" style="display: none;">
+        <div id="canvas-container"></div>
+        <div id="controls">
+            <input type="color" id="colorPicker" value="#000000">
+            <button onclick="clearCanvas()">Șterge Tot (Admin)</button>
+            <p id="timer">Timp rămas: 5s</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
